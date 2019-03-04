@@ -2,10 +2,54 @@
 <html>
 <head>
   <title>eldano.dev</title>
+  <link rel="stylesheet" type="text/css" href="color.css">
+  <style type="text/css">
+    :root {
+      --pink:   #ff5184;
+      --green:  #9bde6b;
+      --yellow: #fed759;
+      --blue:   #57dee9;
+      --white:  #fcfcfa;
+      --black:  #2e2a2e;
+    }
+    html {
+      font-family: Consolas, monaco, monospace;
+      background-color: var(--black);
+      height: 100%;
+    }
+    body {
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      font-size: 72px;
+      color: var(--pink);
+    }
+    .main {
+      height: 100%;
+      margin-top: 200px;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    .links {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .links a {
+      color: var(--blue);
+    }
+  </style>
 </head>
 <body>
-  <h1>eldano.dev</h1>
+  <article class="main">
+    <h1>eldano.dev</h1>
 
-  <a href="https://github.com/eldano" target="_blank">github</a>
+    <section class="links">
+      <a href="https://github.com/eldano" target="_blank">github</a>
+      <a href="https://twitter.com/eldanov2" target="_blank">twitter</a>
+    </section>
+  </article>
 </body>
 </html>
